@@ -24,3 +24,23 @@ echo "/bin contiene programas esenciales para todo usuario (enlace a /usr/bin en
 ls -l /bin/ | head -n 20
 echo "$SEP"
 echo ""
+
+echo "=== /usr ==="
+echo "/usr contiene programas y bibliotecas que no son esenciales para arrancar."
+ls -l /usr | head -n 20
+echo "$SEP"
+echo ""
+
+echo "=== /dev ==="
+echo "/dev representa los dispositivos del sistema como archivos."
+ls -l /dev | head -n 20
+echo "$SEP"
+echo ""
+
+echo "=== /proc ==="
+echo "/proc es un sistema virtual: el kernel genera su contenido al leerlo."
+ls /proc | head -n 20
+echo "$SEP"
+echo ""
+
+echo "Exploracion completada."
