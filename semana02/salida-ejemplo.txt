@@ -1,0 +1,130 @@
+=== /etc ===
+/etc guarda archivos de configuracion del sistema en texto plano.
+total 828
+drwxr-xr-x 2 root root       4096 Aug 27 10:13 PackageKit
+drwxr-xr-x 8 root root       4096 Oct  6 20:25 X11
+-rw-r--r-- 1 root root       4027 Nov  4  2025 adduser.conf
+drwxr-xr-x 2 root root       4096 Oct 29 03:14 alternatives
+drwxr-xr-x 3 root root       4096 Oct  6 20:25 apache2
+drwxr-xr-x 2 root root       4096 Aug 27 10:12 apparmor
+drwxr-xr-x 9 root root       4096 Oct  6 19:59 apparmor.d
+drwxr-xr-x 3 root root       4096 Aug 27 10:13 apport
+drwxr-xr-x 8 root root       4096 Aug 27 10:13 apt
+-rw-r--r-- 1 root root       2553 Feb 13  2026 bash.bashrc
+-rw-r--r-- 1 root root         45 Sep 28  2025 bash_completion
+drwxr-xr-x 2 root root       4096 Nov 12 18:54 bash_completion.d
+-rw-r--r-- 1 root root        367 Mar 10  2026 bindresvport.blacklist
+drwxr-xr-x 2 root root       4096 Apr 15  2026 binfmt.d
+drwxr-xr-x 2 root root       4096 Aug 27 10:12 byobu
+drwxr-xr-x 3 root root       4096 Aug 27 10:11 ca-certificates
+-rw-r--r-- 1 root root       6430 Nov 12 18:54 ca-certificates.conf
+-rw-r--r-- 1 root root       6274 Aug 27 10:12 ca-certificates.conf.dpkg-old
+drwxr-xr-x 4 root root       4096 Aug 27 10:11 chrony
+--------------------------------------------------
+
+=== /var ===
+/var guarda datos que cambian: registros, colas y caches.
+total 44K
+drwxr-xr-x  2 root root   4.0K Nov 11 21:59 backups
+drwxr-xr-x 13 root root   4.0K Oct  6 19:57 cache
+drwxrwxrwt  2 root root   4.0K Aug 27 10:13 crash
+drwxr-xr-x 31 root root   4.0K Aug 27 10:13 lib
+drwxr-xr-x  2 root root   4.0K Apr 20  2026 local
+lrwxrwxrwx  1 root root      9 Aug 27 10:10 lock -> /run/lock
+drwxrwxr-x  9 root syslog 4.0K Nov 12 19:12 log
+drwxrwsr-x  2 root mail   4.0K Aug 27 10:10 mail
+drwxr-xr-x  2 root root   4.0K Aug 27 10:10 opt
+lrwxrwxrwx  1 root root      4 Aug 27 10:10 run -> /run
+drwxr-xr-x  2 root root   4.0K Jul  7 04:06 snap
+drwxr-xr-x  4 root root   4.0K Aug 27 10:11 spool
+drwxrwxrwt  5 root root   4.0K Nov 12 22:00 tmp
+--------------------------------------------------
+
+=== /bin ===
+/bin contiene programas esenciales para todo usuario (enlace a /usr/bin en Debian).
+total 221392
+lrwxrwxrwx    1 root root          11 May 22 11:38 GET -> lwp-request
+lrwxrwxrwx    1 root root          11 May 22 11:38 HEAD -> lwp-request
+lrwxrwxrwx    1 root root           4 Jun 22 14:48 NF -> col1
+lrwxrwxrwx    1 root root          11 May 22 11:38 POST -> lwp-request
+lrwxrwxrwx    1 root root           1 Feb 27  2026 X11 -> .
+lrwxrwxrwx    1 root root          28 Mar 30  2026 [ -> ../lib/cargo/bin/coreutils/[
+-rwxr-xr-x    1 root root       14720 Jul 13 13:43 aa-enabled
+-rwxr-xr-x    1 root root       14720 Jul 13 13:43 aa-exec
+-rwxr-xr-x    1 root root       14720 Jul 13 13:43 aa-features-abi
+lrwxrwxrwx    1 root root          31 Feb 28  2026 acorn -> ../share/nodejs/acorn/bin/acorn
+-rwxr-xr-x    1 root root       25004 Apr 24  2026 add-apt-repository
+lrwxrwxrwx    1 root root          26 Mar 14  2026 addr2line -> x86_64-linux-gnu-addr2line
+-rwxr-xr-x    1 root root     8734232 Mar 23  2026 alacritty
+-rwxr-xr-x    1 root root        2322 Jul  2 16:13 apport-bug
+-rwxr-xr-x    1 root root       13936 Jul  3 07:16 apport-cli
+lrwxrwxrwx    1 root root          10 Jul  3 07:16 apport-collect -> apport-bug
+-rwxr-xr-x    1 root root        3798 Jul  3 07:16 apport-unpack
+-rwxr-xr-x    1 root root       14720 Dec  6  2025 appres
+-rwxr-xr-x    1 root root      141616 Jan 28  2026 appstreamcli
+--------------------------------------------------
+
+=== /usr ===
+/usr contiene programas y bibliotecas que no son esenciales para arrancar.
+total 80
+drwxr-xr-x   2 root root 36864 Nov 12 19:48 bin
+drwxr-xr-x   2 root root  4096 Apr 20  2026 games
+drwxr-xr-x  41 root root  4096 Oct 29 03:14 include
+drwxr-xr-x  62 root root  4096 Oct 29 03:02 lib
+drwxr-xr-x   2 root root  4096 Oct  6 19:59 lib64
+drwxr-xr-x  16 root root  4096 Oct  6 20:19 libexec
+drwxr-xr-x  11 root root  4096 Aug 27 10:10 local
+drwxr-xr-x   2 root root 12288 Nov 12 18:54 sbin
+drwxr-xr-x 124 root root  4096 Oct  7 16:25 share
+drwxr-xr-x   5 root root  4096 Nov 12 17:57 src
+--------------------------------------------------
+
+=== /dev ===
+/dev representa los dispositivos del sistema como archivos.
+total 0
+crw-r--r--  1 root root     10, 235 Nov 12 19:12 autofs
+drwxr-xr-x  2 root root        600 Nov 12 19:12 block
+drwxr-xr-x  2 root root        120 Nov 12 17:56 bsg
+crw-------  1 root root     10, 234 Nov 12 17:57 btrfs-control
+drwxr-xr-x  2 root root       2840 Nov 12 19:12 char
+crw-------  1 root root      5,   1 Nov 12 19:12 console
+lrwxrwxrwx  1 root root         11 Nov 12 17:57 core -> /proc/kcore
+crw-------  1 root root     10, 260 Nov 12 19:12 cpu_dma_latency
+crw-------  1 root root     10, 203 Nov 12 17:57 cuse
+drwxr-xr-x  6 root root        120 Nov 12 17:57 disk
+drwxr-xr-x  2 root root         80 Nov 12 17:56 dri
+crw-rw-rw-  1 root root     10, 258 Nov 12 19:12 dxg
+lrwxrwxrwx  1 root root         13 Nov 12 17:56 fd -> /proc/self/fd
+crw-rw-rw-  1 root root      1,   7 Nov 12 19:12 full
+crw-rw-rw-  1 root root     10, 229 Nov 12 19:12 fuse
+crw-------  1 root root     10, 228 Nov 12 19:12 hpet
+drwxr-xr-x  2 root root          0 Nov 12 19:12 hugepages
+crw-------  1 root tty     229,   0 Nov 12 19:12 hvc0
+crw-------  1 root tty     229,   1 Nov 12 22:06 hvc1
+--------------------------------------------------
+
+=== /proc ===
+/proc es un sistema virtual: el kernel genera su contenido al leerlo.
+1
+10
+162
+163
+164
+1641
+172
+179
+2
+200
+234
+240
+243
+253
+3
+50
+67
+7452
+7504
+7510
+--------------------------------------------------
+
+Exploracion completada.
