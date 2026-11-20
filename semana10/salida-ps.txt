@@ -1,0 +1,138 @@
+Exploracion del sistema - PowerShell
+
+ === /etc === 
+/etc guarda la configuración del sistema en texto plano.
+
+Name              Length LastWriteTime
+----              ------ -------------
+alternatives             10/29/2026 03:14:46
+apache2                  10/06/2026 20:25:02
+apparmor                 08/27/2026 10:12:49
+apparmor.d               10/06/2026 19:59:44
+apport                   08/27/2026 10:13:18
+apt                      08/27/2026 10:13:45
+bash_completion.d        11/12/2026 18:54:34
+binfmt.d                 04/15/2026 14:32:53
+byobu                    08/27/2026 10:12:56
+ca-certificates          08/27/2026 10:11:07
+
+
+--------------------------------------------------
+
+ === /var === 
+/var guarda datos que cambian: registros, colas y caches.
+
+Name    Length LastWriteTime
+----    ------ -------------
+backups        11/18/2026 19:21:15
+cache          10/06/2026 19:57:40
+crash          08/27/2026 10:13:18
+lib            08/27/2026 10:13:44
+local          04/20/2026 04:46:31
+lock           08/27/2026 10:10:47
+log            11/19/2026 21:57:05
+mail           08/27/2026 10:10:47
+opt            08/27/2026 10:10:47
+run            08/27/2026 10:10:47
+
+
+--------------------------------------------------
+
+ === /home === 
+/home contiene un subdirectorio por usuario.
+
+Name    Length LastWriteTime
+----    ------ -------------
+Anghe         11/17/2026 23:20:30
+
+
+--------------------------------------------------
+
+ === /bin === 
+/bin contiene los programas esenciales del sistema.
+
+Name               Length  LastWriteTime
+----               ------  -------------
+X11                        02/27/2026 14:18:59
+[                  28      03/30/2026 12:50:24
+aa-enabled         14720   07/13/2026 13:43:46
+aa-exec            14720   07/13/2026 13:43:46
+aa-features-abi    14720   07/13/2026 13:43:46
+acorn              31      02/28/2026 09:17:20
+add-apt-repository 25004   09/22/2026 04:06:01
+addr2line          26      03/14/2026 21:33:01
+alacritty          8734232 03/23/2026 11:55:32
+apport-bug         2322    07/02/2026 16:13:35
+
+
+--------------------------------------------------
+
+ === /tmp === 
+/tmp contiene archivos temporales que se borran al reiniciar.
+
+Name              Length LastWriteTime
+----              ------ -------------
+firefox                  11/19/2026 22:28:12
+vscode                   11/19/2026 21:57:05
+snap-private-tmp         11/19/2026 21:57:05
+tmp-cache-a              11/19/2026 22:26:01
+tmp-cache-b              11/19/2026 21:57:05
+tmp-cache-c              11/19/2026 22:28:09
+tmp-pipe-in       0      11/19/2026 22:29:24
+tmp-pipe-out      0      11/19/2026 22:29:24
+tmp-socket-1      0      11/19/2026 22:29:24
+tmp-socket-2      0      11/19/2026 22:29:24
+
+
+--------------------------------------------------
+
+ === /proc === 
+/proc es virtual: el kernel genera su contenido al leerlo.
+
+Name Length LastWriteTime
+---- ------ -------------
+1           11/19/2026 21:57:00
+10          11/19/2026 22:06:26
+117         11/19/2026 21:57:05
+122         11/19/2026 21:57:05
+127         11/19/2026 21:59:44
+1447        11/19/2026 22:09:13
+1449        11/19/2026 22:09:13
+1453        11/19/2026 22:09:13
+158         11/19/2026 22:06:26
+173         11/19/2026 22:03:17
+
+
+--------------------------------------------------
+
+ === Descubrimiento === 
+Cmdlets con el sustantivo Item:
+
+Name        Source
+----        ------
+Clear-Item  Microsoft.PowerShell.Management
+Copy-Item   Microsoft.PowerShell.Management
+Get-Item    Microsoft.PowerShell.Management
+Invoke-Item Microsoft.PowerShell.Management
+Move-Item   Microsoft.PowerShell.Management
+New-Item    Microsoft.PowerShell.Management
+Remove-Item Microsoft.PowerShell.Management
+Rename-Item Microsoft.PowerShell.Management
+Set-Item    Microsoft.PowerShell.Management
+
+
+Síntesis de la ayuda de Get-ChildItem:
+
+Name     : Get-ChildItem
+Synopsis : 
+           Get-ChildItem [[-Path] <string[]>] [[-Filter] <string>] [-Include <string[]>] [-Exclude <string[]>] [-Recurse] [-Depth <uint>] [-Force] [-Name] [-Attributes <FlagsExpression[FileAttributes]>] [-FollowSymlink] [-Directory] [-File] [-Hidden] [-ReadOnly] [-System] [<CommonParameters>]
+           
+           Get-ChildItem [[-Filter] <string>] -LiteralPath <string[]> [-Include <string[]>] [-Exclude <string[]>] [-Recurse] [-Depth <uint>] [-Force] [-Name] [-Attributes <FlagsExpression[FileAttributes]>] [-FollowSymlink] [-Directory] [-File] [-Hidden] [-ReadOnly] [-System] [<CommonParameters>]
+           
+
+
+Cantidad de elementos en /etc:
+172
+
+Exploracion completada.
+
