@@ -41,4 +41,18 @@ Show-Seccion -Path "/bin" -Desc "/bin contiene los programas esenciales del sist
 Show-Seccion -Path "/tmp" -Desc "/tmp contiene archivos temporales que se borran al reiniciar."
 Show-Seccion -Path "/proc" -Desc "/proc es virtual: el kernel genera su contenido al leerlo."
 
+Write-Output " === Descubrimiento === "
+
+Write-Output "Cmdlets con el sustantivo Item:"
+Get-Command -Noun Item | Where-Object CommandType -eq Cmdlet |
+    Select-Object Name, Source | Format-Table -AutoSize | Out-String | Write-Output
+
+Write-Output "Síntesis de la ayuda de Get-ChildItem:"
+Get-Help Get-ChildItem |
+    Select-Object Name, Synopsis | Format-List | Out-String | Write-Output
+
+Write-Output "Cantidad de elementos en /etc:"
+(Get-ChildItem -LiteralPath /etc -ErrorAction SilentlyContinue).Count
+
+Write-Output ""
 Write-Output "Exploracion completada."
