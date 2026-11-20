@@ -1,0 +1,35 @@
+=== Monitor de procesos ===
+Usuario: Anghe
+Fecha: Thu Nov 19 22:10:11 -04 2026
+
+=== Procesos del usuario ordenados por %CPU ===
+    PID STAT %CPU %MEM COMMAND
+    841 Sl+   2.2  1.4 firefox
+    851 Ssl   1.5  2.1 vscode
+   1453 Ss+   0.1  0.0 chrome
+    382 Ss    0.0  0.0 systemd
+    331 Ss    0.0  0.0 bash
+    409 Ss+   0.0  0.0 whatsapp
+    384 S     0.0  0.0 telegram
+   2095 Ss    0.0  0.0 spotify
+   2096 S     0.0  0.0 discord
+   2098 R     0.0  0.0 gnome-shell
+   2099 S     0.0  0.0 vscode
+
+=== Proceso de mayor consumo ===
+    841 firefox          2.2
+
+=== Conteo por estado ===
+      5 R
+      9 S
+
+=== Proceso de prueba ===
+Proceso de prueba lanzado con PID = 2125
+    PID STAT CMD
+   2125 S    sleep 60
+[1]+  2125 Running                    sleep 60 &
+
+=== Terminacion en dos etapas ===
+Termino correctamente con SIGTERM
+
+Monitoreo completado.
