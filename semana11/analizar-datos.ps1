@@ -15,3 +15,18 @@ param (
 
 Write-Output " === Análisis de $Log === "
 Write-Output " "
+
+$registros = Get-Content $Log | ForEach-Object {
+    if ($_ -match '(\S+).*\[.*?:(\d\d):.*\] "\S+ (\S+).*?" (\d+) (\d+)') {
+        [PSCustomObject]@{
+            IP      = $Matches[1]
+            Hora    = $Matches[2]
+            Recurso = $Matches[3]
+            Estado  = [int]$Matches[4]
+            Bytes   = [int]$Matches[5]
+        }
+    }
+}
+
+Write-Output "Registros leidos: $($registros.Count)"
+Write-Output " "
